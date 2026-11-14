@@ -1,24 +1,24 @@
 class Dune < Formula
   desc "Circuit simulator derived from Berkeley SPICE3f5 and ngspice (`dune` command)"
   homepage "https://milkway.github.io/dune/"
-  version "0.6.2"
-  license "BSD-3-Clause"
+  version "0.7.0"
+  license all_of: ["BSD-3-Clause", "ECL-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/milkway/dune/releases/download/v0.6.2/dune-aarch64-apple-darwin.tar.gz"
-      sha256 "66da5e8638288a0492d93fe6b5fc9895cdabd8dbd24c03ae484a324b9d11414f"
+      url "https://github.com/milkway/dune/releases/download/v0.7.0/dune-aarch64-apple-darwin.tar.gz"
+      sha256 "a75c8d3ca773dc22323ed8d69dba5734817db3686dadf91376ea3eb86b953049"
     end
     on_intel do
-      url "https://github.com/milkway/dune/releases/download/v0.6.2/dune-x86_64-apple-darwin.tar.gz"
-      sha256 "f497912b2a810a0195deaa083233fb859be3910af1f44e711e9b3510f9a5abcb"
+      url "https://github.com/milkway/dune/releases/download/v0.7.0/dune-x86_64-apple-darwin.tar.gz"
+      sha256 "9e48322ca65ebaa09d34a2f6a36c156d4dad0813be807d4ff304de189340cd8a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/milkway/dune/releases/download/v0.6.2/dune-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b303b00e2238650be094f78fac31f77529de8f2d6b6deb9b564958cc923b9aca"
+      url "https://github.com/milkway/dune/releases/download/v0.7.0/dune-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "cc386033e81c1fa803e19fd9e3ddd2bf1189c18aed02cb03805e7583f8924bca"
     end
   end
 
